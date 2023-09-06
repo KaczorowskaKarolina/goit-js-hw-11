@@ -1,1 +1,50 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#searchForm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#searchResults {
+    margin-top: 20px;
+}
