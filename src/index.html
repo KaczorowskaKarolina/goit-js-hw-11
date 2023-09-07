@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 11 - wyszukiwarka zdjęć</title>
-    <link rel="stylesheet" href="./sass/index.scss">
-</head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./js/index.js"></script>
+    <title>Homework 11</title>
+  </head>
 <body>
     <div class="container">
-        <form id="searchForm">
-            <input type="text" id="searchInput" placeholder="Search images ...">
+        <form class="searchPhotosForm" id="search-form">
+          <input hidden name="page" type="number" value="1" />
+            <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Search images ..."
+            name="q"
+            value="" />
             <button type="submit"><img alt="Search"></button> //src="search-icon.png"
         </form>
-        <div id="searchResults"></div>
+        <div class="photos" id="photos"></div>
     </div>
-
-    <script src="./js/index.js" type="module"></script>
 </body>
 </html>
