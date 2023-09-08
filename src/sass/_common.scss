@@ -28,6 +28,8 @@ input[type="text"] {
     width: calc(100% - 72px);
     padding: 10px;
     font-size: 16px;
+    border-radius: 5px 0px 0px 5px;
+    text-align: center; /* Dodanie wycentrowania tekstu w polu tekstowym */
 }
 
 button {
@@ -38,16 +40,19 @@ button {
     cursor: pointer;
     display: flex;
     align-items: center;
+    border-radius: 0px 5px 5px 0px;
+    justify-content: center; /* Dodanie wycentrowania ikony i tekstu w przycisku */
 }
 
 button:hover {
     background-color: #f8f40a;
 }
 
-button img {
+button svg {
     width: 20px;
     height: 20px;
     margin-right: 5px;
+    fill: #fff;
 }
 
 #photos {
