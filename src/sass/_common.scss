@@ -5,7 +5,6 @@ body {
 }
 
 .container {
-    // max-width: 600px;
     margin: 0 auto;
     padding: 5px;
     display: flex;
@@ -18,12 +17,11 @@ h1 {
 }
 
 #searchPhotosForm {
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 20px;
-margin-top: 20px;
-// max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 input[type="text"] {
@@ -31,7 +29,7 @@ input[type="text"] {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px 0px 0px 5px;
-    text-align: center; /* Dodanie wycentrowania tekstu w polu tekstowym */
+    text-align: center;
     border-style: none;
     height: 40px;
 }
@@ -45,7 +43,7 @@ button {
     display: flex;
     align-items: center;
     border-radius: 0px 5px 5px 0px;
-    justify-content: center; /* Dodanie wycentrowania ikony i tekstu w przycisku */
+    justify-content: center;
     border-style: none;
     height: 40px;
 }
@@ -71,8 +69,7 @@ button:hover svg {
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     margin-top: 20px;
-    height: 400px; /* przykładowa wysokość */
-    
+    height: 400px;
 }
 
 #photos img {
@@ -80,4 +77,22 @@ button:hover svg {
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-}
+    transition: transform 0.2s ease;
+    position: relative;
+  }
+  
+  #photos img:hover {
+    transform: scale(1.1);
+  }
+  
+  #photos img:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 0 5px;
+    transform: translate(100%, -100%);
+  }

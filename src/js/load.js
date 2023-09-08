@@ -13,8 +13,8 @@ function drawPhotos ({ photos, page}) {
         photoContainer.innerHTML = '';
     }
 
-    const children = photos.map(getPhotoElement);
-    photoContainer.append(...children);
+const children = photos.map(getPhotoElement);
+photoContainer.append(...children);
 }
 
 export async function loadPhotos({q, page}) {
