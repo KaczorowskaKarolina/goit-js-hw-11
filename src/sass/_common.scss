@@ -1,9 +1,13 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+body {
+    background-color: orange;
+}
+
 .container {
-    max-width: 600px;
+    // max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,30 +17,31 @@ h1 {
     text-align: center;
 }
 
-#searchForm {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+#searchPhotosForm {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
 }
 
 input[type="text"] {
-    width: 100%;
+    width: calc(100% - 72px);
     padding: 10px;
     font-size: 16px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #5aed0b;
     color: #fff;
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
+}
 
-    &:hover {
-        background-color: #0056b3;
-    }
+button:hover {
+    background-color: #f8f40a;
 }
 
 button img {
@@ -45,6 +50,16 @@ button img {
     margin-right: 5px;
 }
 
-#searchResults {
+#photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
     margin-top: 20px;
+    height: 400px; /* przykładowa wysokość */
+}
+
+#photos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
