@@ -128,3 +128,42 @@ button:hover svg {
     color: white;
     cursor: pointer;
   }
+
+  /* Modal styles */
+  #modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .enlargedPhoto {
+    max-width: 90%;
+    max-height: 100vh;
+    margin: auto;
+    display: block;
+  }
+
+  #close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Infinite scroll styles */
+  #photo-container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .photo {
+    display: inline-block;
+  }
