@@ -1,39 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="eng">
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo search</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./js/index.js"></script>
-    <title>Homework 11</title>
   </head>
-<body>
-    <div class="container">
-        <form id="searchPhotosForm" class="search-form">
-          <input hidden name="page" type="number" value="1" />
-            <input 
-            type="text" 
-            id="search-input" 
-            placeholder="Search images ..."
-            name="q"
-            value="" />
-            <button type="submit">
-              <svg class="search" width="15" height="15">
-              <use href="./images/icons.svg#icon-search"></use>
-            </svg></button>
-        </form>
-        <div class="photos" id="photos"></div>
-    </div>
-    <div id="modal" class="modal">
-      <img id="modal-image" />
-      <span id="close-modal" class="close-modal"></span>
-    </div>
-    
-
-    <div id="photo-container">
-      <div id="photos"></div>
-    </div>
-    
-</body>
+  <body>
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images ..."
+      />
+      <button class="search_button" type="submit">
+        <svg class="icons" width="18px" height="18px">
+          <use href="./images/icons.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+    <div class="gallery"></div>
+    <button type="button" class="load_button is-hidden"><b>LOAD MORE</b></button>
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>
