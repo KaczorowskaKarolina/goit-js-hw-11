@@ -62,7 +62,9 @@ body {
 }
 
 .search-button:hover {
-    background-color: #fff;
+  background-color: #fff;
+  fill: rgb(174, 235, 112);
+  border-color: rgb(174, 235, 112);
 }
 
 .gallery {
@@ -135,6 +137,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
-// .load_button:hover {
-//   background-color: #fff;
-// }
+.is-hidden {
+  display: block;
+}
+
