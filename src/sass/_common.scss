@@ -80,7 +80,7 @@ body {
 .photo-card {
     width: 24%;
     height: 380px;
-    background-color: white;
+    background-color: rgb(233, 228, 192);
     box-shadow: 3px 3px 5px rgb(174, 235, 112);
     border-radius: 4px;
     overflow: hidden;
@@ -119,7 +119,7 @@ body {
 }
 
 .load_button {
-  display: none;
+  display: block;
   position: fixed;
   bottom: 10px;
   left: 50%;
@@ -137,7 +137,10 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.is-hidden {
-  display: block;
+.load_button:hover {
+  background-color: rgb(255, 251, 0);
 }
 
+.is-hidden {
+  display: none;
+}
